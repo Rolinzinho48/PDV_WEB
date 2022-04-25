@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    
+}
+main{
+    display: flex;
+    margin-top: 7vh;
+}
+.produto_atual{
+    border:1px solid black;
+    width: 40%;
+    height: 85vh;
+    border-radius: 25px;
+}
+.produto_atual>div{
+    background-color: #FF2353;
+    display: flex;
+    align-items: center;
+    border-radius: 23px 23px 0 0;
+
+}
+.produto_atual>div>input{
+    height: 4vh;
+}
+
+
+.compra_total{
+    border: 1px solid black ;
+    width: 65%;
+    margin-left: 30px;
+}
+.compra_total>.cabecalho{
+    display: flex;
+    background-color: #FF2353;
+    height: 10vh;
+}
+.compra_total>.preco{
+    background-color: #FFDB6D;
+}
