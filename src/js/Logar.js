@@ -1,8 +1,7 @@
 import {banco} from '/src/js/Database.js'
 
 //funcao que coleta os dados dos inputs e verifica se existe no banco de dados
-const verificarLogin = (event)=>{
-    event.preventDefault()
+const verificarLogin = ()=>{
 
     const txtLogin = document.getElementById("loginInput").value
     const txtSenha = document.getElementById("passwordInput").value
@@ -15,16 +14,20 @@ const verificarLogin = (event)=>{
             for(let i=0; i<rows.length; i++){
                 if(txtLogin==rows[i].usuario ){
                     if(txtSenha==rows[i].senha){
-                        achei = true
+                        window.location.href = "/src/html/PDV.html"
+                        
                     }
                     
                 }
             }
-            console.log(achei)
     
         })
     })
+    window.location.href = ""
+    
 }
+
+console.log("SIM")
 
 //adicionando evento de click no botao de entrar
 const btnEntrar = document.getElementById("btn_entrar")

@@ -13,17 +13,18 @@
 
             <div>
                 <h2>Produto tal</h2>
-                <input type="search" placeholder="Código" id="">
+                <input type="search" placeholder="Código" id="codigoPesquisa">
+                <button id = "adicionarProduto">X</button>
             </div>
 
             <label for="">Código</label>
-            <input type="text" value="1234567">
+            <input id="codigoAtual" type="text" value="1234567">
             <label for="">Quantidade</label>
-            <input type="text" value="3">
+            <input id="qtdAtual" type="text" value="3">
             <label for="">Valor Unitario</label>
-            <input type="text" value="R$25.00">
+            <input id="precoProdutoAtual" type="text" value="R$25.00">
             <label for="">Valor Total</label>
-            <input type="text" value="R$100.00">
+            <input id="precoTotalAtual" type="text" value="R$100.00">
 
         </section>
 
@@ -31,18 +32,23 @@
 
             <div class = "cabecalho">
                 <h2>Produto</h2>
+                <h2></h2>
                 <h2>Qtd</h2>
                 <h2>Preço</h2>
                 <h2>Total</h2>
             </div>
 
-            <table>
+            <table id = "tabela_produto">
+                
             </table>
 
             <div class = "preco">
                 <h2>R$100,00</h2>
             </div>
         </section>
+
+
+    <script type="module" src="/src/js/Comprar.js"></script>
     </main>
 </body>
 </html>
